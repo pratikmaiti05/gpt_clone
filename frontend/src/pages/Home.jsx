@@ -26,7 +26,7 @@ export default function Home() {
       .catch(() => toast.error("Failed to load chats"));
   }, [navigate]);
   useEffect(() => {
-    const socket = io("http://localhost:3000", { withCredentials: true });
+    const socket = io("https://gpt-clone-backend-ljap.onrender.com", { withCredentials: true });
     socketRef.current = socket;
     socket.on("ai-response", (data) => {
       if (data.chat === activeChat?._id) {
