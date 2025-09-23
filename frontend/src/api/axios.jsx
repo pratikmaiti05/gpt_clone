@@ -1,6 +1,6 @@
 import axios from 'axios'
 const instance = axios.create({
-  baseURL: "http://localhost:3000",  // Updated to match your backend port
+  baseURL: "https://gpt-clone-backend-ljap.onrender.com", 
   withCredentials: true,
 })
 export default instance
