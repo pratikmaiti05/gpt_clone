@@ -8,7 +8,7 @@ const { createMemory, queryMemory } = require("../service/vectorService");
 function initSocketServer(httpServer) {
   const io = new Server(httpServer, { 
     cors: {
-      origin: "http://localhost:5173",
+      origin: "https://gpt-clone-frontend.onrender.com",
       methods: ["GET", "POST"],
       allowedHeaders: ["Content-Type"],
       credentials: true
